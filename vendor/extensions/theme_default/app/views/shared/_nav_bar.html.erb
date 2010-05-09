@@ -1,0 +1,11 @@
+<li><%= link_to 'Custom' %></li>
+<li><%= link_to 'Ready To Ship', products_path %></li>
+<li><%= image_tag("spacer.gif", :width=>"30", :height=>"2") %></li>
+<li><%= link_to 'About', :controller => 'about', :action => 'index' %></li>
+<li><%= link_to 'Press', :controller => 'about', :action => 'underconstruction' %></li>
+<li><%= link_to 'Contact', :controller => 'about', :action => 'underconstruction' %></li>
+<li><%= link_to 'Favorites', :controller => 'about', :action => 'underconstruction' %></li>
+<%= render 'shared/login_bar' %>
+<% if store_menu? %>
+  <%= render 'shared/store_menu' %>
+<% end %>

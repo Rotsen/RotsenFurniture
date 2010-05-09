@@ -1,0 +1,11 @@
+<% if image %> 
+  <%= link_to image_tag image.attachment.url(:product), image.attachment.url(:product), :class => "MagicZoom"  %>
+<% else %>
+  <%= link_to product_image(@product), product_image(@product), :class => "MagicZoom"   %>
+<% end %>
+
+
+<% content_for :head do %>
+<%= stylesheet_link_tag 'magiczoom' %>
+<%= javascript_include_tag 'magiczoom' %>
+<% end %>
