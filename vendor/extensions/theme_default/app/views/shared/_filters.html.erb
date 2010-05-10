@@ -1,4 +1,4 @@
-<% if @taxon.parent 
+<% if @taxon.parent
      siblings = @taxon.parent.children 
    else
      siblings = Taxonomy.all.map &:root

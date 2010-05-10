@@ -52,7 +52,7 @@ Running from edge sources (latest and greatest features)
 Browse Store
 ------------
 
-http://localhost:nnnn/store
+http://localhost:3000/
 
 Browse Admin Interface
 ----------------------
